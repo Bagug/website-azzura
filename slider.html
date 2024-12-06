@@ -1,0 +1,27 @@
+<style>
+  .col-3 {
+    animation: slide 10s linear infinite;
+  }
+
+  .col-3 img {
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Menambahkan animasi ke gambar */
+  @media (max-width: 768px) {
+    .col-3 img {
+      height: 200px;
+    }
+  }
+</style>
